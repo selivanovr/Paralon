@@ -5,7 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="format-detection" content="telephone=no">
-   <link rel="stylesheet" href="css/style.min.css?_v=20220815231417">
+   <link rel="stylesheet" href="css/style.min.css?_v=20220816171424">
    <title>Paralon</title>
 </head>
 
@@ -517,7 +517,7 @@
             </div>
          </div>  
       </section>
-      <section class="form">
+      <section class="form form--with-bg">
          <div class="container">
             <div class="form__body">
                <p class="form__info">
@@ -551,6 +551,42 @@
             </div>
          </div>
       </section>
+      <section class="popup" data-popup="request">
+   <div class="popup__body">
+      <div class="popup__content pop-content">
+         <a href="#!" class="popup__closebtn">+</a>
+         <h3 class="pop-content__title">Оставьте заявку</h3>
+         <p class="pop-content__text">Наш специалист свяжется с вами в ближайшее время</p>
+         <form method="post" class="pop-content__form form form--popup" name="popupform">
+            <label class="form__input-label">
+               <input class="form__input" type="text" name="name" required>
+               <span class="form__input-placeholder">Ваше имя<span>*</span></span>
+            </label>
+            <label class="form__input-label">
+               <input class="form__input" type="tel" name="phone" required>
+               <span class="form__input-placeholder">Ваш номер телефона<span>*</span></span>
+            </label>
+            <label class="form__checkbox-label">
+               <input class="form__checkbox" type="checkbox" name="checkbox">
+               <span class="form__custom-checkbox"></span>
+               <span class="form__checkbox-text">Я ознакомлен с <a href="#!">политикой конфиденциальности</a> и согласен на обработку персональных данных</span>
+            </label>
+            <button type="submit" name="submit-button" class="form__button button" data-popbtn="thanks">Отправить заявку</button>
+         </form>
+       </div>
+   </div>
+</section>
+<section class="popup" data-popup="thanks">
+   <div class="popup__body">
+      <div class="popup__content pop-content">
+         <a href="#!" class="popup__closebtn">+</a>
+         <h3 class="pop-content__title">Спасибо</h3>
+         <p class="pop-content__text">Ваша заявка принята, менеджер свяжется с вами 
+            в ближайшее время
+         </p>
+       </div>
+   </div>
+</section>
    </main>
    <footer class="footer">
    <div class="container">
@@ -617,42 +653,6 @@
       </div>
    </div>
 </footer>
-   <div class="popup" data-popup="request">
-   <div class="popup__body">
-      <div class="popup__content pop-content">
-         <a href="#!" class="popup__closebtn">+</a>
-         <h3 class="pop-content__title">Оставьте заявку</h3>
-         <p class="pop-content__text">Наш специалист свяжется с вами в ближайшее время</p>
-         <form method="post" class="pop-content__form form" name="popupform">
-            <label class="form__input-label">
-               <input class="form__input" type="text" name="name" required>
-               <span class="form__input-placeholder">Ваше имя<span>*</span></span>
-            </label>
-            <label class="form__input-label">
-               <input class="form__input" type="tel" name="phone" required>
-               <span class="form__input-placeholder">Ваш номер телефона<span>*</span></span>
-            </label>
-            <label class="form__checkbox-label">
-               <input class="form__checkbox" type="checkbox" name="checkbox">
-               <span class="form__custom-checkbox"></span>
-               <span class="form__checkbox-text">Я ознакомлен с <a href="#!">политикой конфиденциальности</a> и согласен на обработку персональных данных</span>
-            </label>
-            <button type="submit" name="submit-button" class="form__button button" data-popbtn="thanks">Отправить заявку</button>
-         </form>
-       </div>
-   </div>
-</div>
-<div class="popup" data-popup="thanks">
-   <div class="popup__body">
-      <div class="popup__content pop-content">
-         <a href="#!" class="popup__closebtn">+</a>
-         <h3 class="pop-content__title">Спасибо</h3>
-         <p class="pop-content__text">Ваша заявка принята, менеджер свяжется с вами 
-            в ближайшее время
-         </p>
-       </div>
-   </div>
-</div>
-   <script src="js/index.min.js?_v=20220815231417"></script>
+   <script src="js/index.min.js?_v=20220816171424"></script>
 </body>
 </html>
